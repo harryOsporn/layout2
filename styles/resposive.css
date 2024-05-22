@@ -1,0 +1,114 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px)  {
+    
+}
+
+/*mobile */
+@media (max-width: 768px) {
+    /* top */
+    .top{
+        display: none;
+    }
+    /*header*/
+    .mid-header{
+        display: none;
+    }
+
+    .slidebar{
+        display: none;
+        
+    }
+    .slidebar nav ul{
+        flex-direction: column;
+        list-style-type: none;
+        background-color: lightcyan;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        bottom: 0;
+        z-index: 100;
+        padding: 5px;
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+      
+    }
+    .slidebar nav ul li{
+        margin: 15px 10px 15px 10px;
+    }
+    .slidebar nav ul li:hover{
+        background-color: antiquewhite;
+        padding: 5px 5px 2px 5px;
+        transition: 0.5s;
+    }
+    .slidebar nav ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--grey-colour);
+    }
+    .slidebar nav ul div i{
+        cursor: pointer;
+    }
+    .slidebar .sidebar-active{
+        margin: 0 8px 0;
+        display: block;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.7s;
+    }
+    .right-header #user{
+        display: block;
+    }
+    .right-header .sidebar-active{
+        display: block;
+        margin: 0 8px 0;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    /* intro text area */
+    .categories h3{
+        font-size: 24px;
+    }
+    .categories p{
+        font-size: 12px;
+    }
+    .layer h3{
+        font-size: 16px;
+    }
+    /* box */
+    .box-container{
+        padding-left: 20px;
+    }
+    .box-container h3{
+        font-size: 24px;
+    }
+    .box-container span{
+        font-size: 18px;
+    }
+    .box-header-right-section button{
+        display: none;
+    }
+    .box-container span{
+        padding: 0 5px 0;
+    }
+    .star-evaluation i {
+        font-size: 13px;
+    }
+    /* footer */
+    .footer-col-2{
+        width: 61px;
+    }
+    .footer-col-2 p{
+        margin-top: 10px;
+    }
+    .footer-col-3 h4, .footer-col-4 h4{
+        width: 61px;
+        font-size: 13px;
+        margin: 15px 0 0 0;
+    }
+}

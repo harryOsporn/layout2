@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* slider */
+.slideshow-container {
+    max-width: 1400px; 
+    position: relative;
+    padding: 0 10px 0;
+    margin: auto;
+  }
+  .fade{
+    transition: 0.5s;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+    
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.25);
+  }
+  .dots{
+    position: absolute;
+    bottom: 5%;
+    right: 45%;
+  }
+  /* dot */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    /* background-color: #bbb; */
+    border: 1px solid white;
+    /* border-radius: 50%; */
+    border-radius: 10px;
+    display: inline-block;
+    transition:  0.6s all;
+  }
+  .active{
+    width: 30px;
+  }
+  .active, .dot:hover {
+    background-color: white;
+  }
+  @media only screen and (max-width:300px) {
+      .prev,.next{
+        font-size: 11px;
+      }
+  }
+
