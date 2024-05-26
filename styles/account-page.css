@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins, sans-serif;
+}
+/* account page */
+h1{
+    font-size: 32px;
+}
+.container{
+    max-width:460px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 26px 30px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo-account-page{
+
+}
+.logo-account-page img{
+    width: 48px;
+    height: 48px;
+}
+.name{
+    display: flex;
+}
+
+input{
+    font-family: Poppins, sans-serif;
+    height: 50px
+    padding 0 3px 0;
+}
+.firstnameInput{
+    margin-right: 5px;
+    width: 40%;
+}
+.lastnameInput{
+    width: 60%;
+}
+.passwordInput,.repasswordInput, .emailInput{
+    width: 100%;
+}
+.firstnameInput, .lastnameInput, .passwordInput, .repasswordInput, .emailInput{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 5px 0 5px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 18px;
+    
+}
+.submit{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.submit p {
+    margin-bottom: 10px;
+}
+.submitInput{
+    border:none;
+    background-color: black;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition:  0.5s;
+}
+.submitInput:hover{
+    background-color: rgb(60, 59, 59);
+}
+span{
+    font-size: 16px;
+}

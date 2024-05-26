@@ -3,7 +3,7 @@
 .footer-container{
     margin-top: 40px;
     font-family: Poppins, sans-serif;
-    background-color:#DCDCDC;
+    background-color:#fcfafa;
 }
 .footer-row-1{
     display: flex;
@@ -64,6 +64,6 @@
     color: grey;
 }
 .footer-row-2{
-    background-color: lightgray;
+    background-color: rgb(241, 238, 238);
    text-align: center   ;
 }
