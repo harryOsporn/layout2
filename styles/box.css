@@ -18,6 +18,11 @@
 .box-header-right-section{
     font-size: 24px;
 }
+.box-header-right-section span a{
+    text-decoration: none;
+    color: black;
+    transition: 1.45s;
+}
 .box-header-right-section button{
     height: 48px;
     width: 48px;
@@ -35,6 +40,10 @@
 }
 .box-container span{
     font-size: 24px;
+}
+.box-container span a:hover{
+    color: rgb(130, 129, 129);
+    cursor: pointer;
 }
 /* grid container */
 .card{

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.product-container{
+    font-family: Poppins, sans-serif;
+    padding: 0 35px 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    column-gap: 10px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 20px 0;
+}
+.title select, .title select option{
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+}
+.title select{
+    border: 1px solid #ff523b;
+    border-radius: 2px;
+}
+.title select:focus{
+    outline: none;
+}
+.product-title{
+    font-size: 24px; 
+    font-weight: 500;
+}
+.product-item{
+}
+.product-item img{
+    width: 100%;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.product-info span{
+    margin: 3px 0 3px;
+}
+.pageNumber{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.pageNumber span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pageNumber span:hover{
+    background-color: #ff523b;
+    color: white;
+    border: none;
+}
+@media (max-width: 768px){
+    .product-title{
+       display: none;
+    }
+}

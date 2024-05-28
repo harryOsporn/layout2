@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.product-detail-container{
+    font-family: Poppins, sans-serif;
+    margin-top: 50px;
+    padding: 0 10px 0;
+}
+.product-detail-container .row{
+    display: flex;
+}
+
+.product-detail-container .row .col-2-1{
+    flex: 1;
+    display: flex;
+}
+.small-img-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.small-img-row{
+    width: 80px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.product-detail-container .row .col-2-2{
+    flex: 1;
+    padding-left: 40px;
+}
+.size{
+    margin: 20px 0 20px 0px;
+}
+.size-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.size-btn span{
+    display: inline-block;
+    text-align: center;
+    padding: 4px 0 0;
+    font-size: 20px;
+    border: 1px solid lightgrey;
+    margin-right: 3px;
+    cursor: pointer;
+    width: 100px;
+}
+.size-btn span:hover{
+    border: 1px solid black;
+}
+.title a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+.size-title{
+    display: flex;
+    justify-content: space-between;
+}
+.addToCart-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.product-detail-container .row .col-2-2 .addToCart-btn button{
+    background-color: black;
+    color: white;
+    font-family: Poppins, sans-serif;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 80%;
+    height: 40px;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.product-detail-container .row .col-2-2 .addToCart-btn button:hover{
+    background-color: rgb(81, 81, 81);
+}
+#ProductImg {
+    transition: all 0.3s;
+}
+
+
+@media screen and (max-width:1020px){
+    .row{
+        flex-direction: column;
+    }
+    .small-img-col{
+        display: none;
+    }
+    .bigImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-detail-container .row .col-2-2{
+      
+        padding: 0 10px 0;
+    }
+    .size-title{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .size-btn
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+    .size-btn span{
+        margin: 0;
+        padding: 0;
+    }
+}
