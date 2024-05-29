@@ -4,6 +4,7 @@
 .contact-container{
     display: flex;
     font-family: Roboto, sans-serif;
+    padding: 0 10px 0;
 }
 
 .contact-input{
@@ -79,4 +80,16 @@
 .contact-map{
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-info-container{
+        flex-direction: column;
+    }
+    .contact-map{
+        margin-top: 20px;
+    }
 }

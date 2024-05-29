@@ -38,3 +38,9 @@
 .floating-button-messenger img{
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .floating-button-zalo,.floating-button-messenger{
+        width: 35px;
+        height: 35px;
+    }
+}

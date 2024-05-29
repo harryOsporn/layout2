@@ -112,7 +112,7 @@
 @media screen and (max-width:768px){
     .size-btn
     {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
         row-gap: 10px;
     }
     .size-btn span{
