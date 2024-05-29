@@ -73,7 +73,7 @@
         font-size: 18px;
         transition: 0.5s;
     }
-    /* intro text area */
+    /* category */
     .categories h3{
         font-size: 24px;
     }
@@ -98,6 +98,9 @@
     }
     .box-container span{
         padding: 0 5px 0;
+    }
+    .card{
+        grid-template-columns: 1fr 1fr;
     }
     .star-evaluation i {
         font-size: 13px;
@@ -190,5 +193,8 @@
     }
     .product-info span, .product-info p{
         font-size: 16px;
+    }
+    .card{
+        grid-template-columns: 1fr;
     }
 }

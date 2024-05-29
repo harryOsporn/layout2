@@ -12,6 +12,7 @@
 .product-detail-container .row .col-2-1{
     flex: 1;
     display: flex;
+    height: 580px;
 }
 .small-img-col{
     display: flex;
@@ -24,6 +25,10 @@
     margin-right: 10px;
 }
 
+.productImg{
+    height: 100%;
+    object-fit: cover;
+}
 .product-detail-container .row .col-2-2{
     flex: 1;
     padding-left: 40px;

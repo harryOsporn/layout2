@@ -29,7 +29,7 @@ h1{
     height: 48px;
 }
 .name{
-    display: flex;
+
 }
 
 input{
@@ -39,17 +39,17 @@ input{
 }
 .firstnameInput{
     margin-right: 5px;
-    width: 40%;
+    width: 100%;
 }
 .lastnameInput{
-    width: 60%;
+    width: 100%;
 }
 .passwordInput,.repasswordInput, .emailInput{
     width: 100%;
 }
 .firstnameInput, .lastnameInput, .passwordInput, .repasswordInput, .emailInput{
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 5px 0 5px 10px;
     border-radius: 4px;
     border: 1px solid black;
@@ -61,20 +61,25 @@ input{
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .submit p {
     margin-bottom: 10px;
 }
+.submit p a{
+    color: lightcoral;
+}
 .submitInput{
     border:none;
     background-color: black;
     width: 200px;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 20px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
     transition:  0.5s;
+    padding: 5px 0 5px;
 }
 .submitInput:hover{
     background-color: rgb(60, 59, 59);

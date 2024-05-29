@@ -6,7 +6,13 @@
     <title>ĐĂNG KÝ</title>
     <link rel="stylesheet" href="styles/account-page.css">
     <link rel="stylesheet" href="styles/account-page-responsive.css">
-</head>
+    <style>
+        .error-message{
+            color: red;
+            font-size: 14px; 
+            margin-top: 5px; 
+        }
+    </style>
 <body>
     <div class="container">
        <div class="logo-account-page">
@@ -19,30 +25,41 @@
        <h1>Now let's make you a HaiSport Member.</h1>
       <form action="" method="">
         <div class="name">
-            <input class="firstnameInput" type="text" placeholder="First Name*" required>
-            <input class="lastnameInput" type="text" placeholder="Last Name*" required>
+            <div class="ho">
+                <input class="firstnameInput" id="firstNameInput" type="text" placeholder="Họ*">
+                <div class="error-message" id="firstNameErrorMessage"></div>
+            </div>
+            
+            <div class="ten">
+                <input class="lastnameInput" id="lastNameInput" type="text" placeholder="Tên*" >
+                <div class="error-message" id="lastNameErrorMessage"></div>
+            </div>
         </div>
 
         <div class="email">
-            <input type="email" class="emailInput" placeholder="Email*" required>
+            <input type="email" class="emailInput" id="emailInput" placeholder="Email*">
+            <div class="error-message" id="emailErrorMessage"></div>
         </div>
 
         <div class="password">
-            <input class="passwordInput" type="password" placeholder="Password*" required>
+            <input class="passwordInput" id="passwordInput" type="password" placeholder="Mật khẩu*" >
+            <div class="error-message" id="passwordErrorMessage"></div>
         </div>
         <div class="repassword">
-            <input class="repasswordInput" type="password" placeholder="Re-enter Password*" required>
+            <input class="repasswordInput" id="repasswordInput" type="password" placeholder="Nhập lại mật khẩu*" >
+            <div class="error-message" id="repasswordErrorMessage"></div>
+         </div>
+      
+        <div class="submit">
+            <button type="button" class="submitInput" onclick="validateForm()">Đăng Ký</button>
         </div>
       
         <div class="submit">
-            <input class="submitInput" type="submit" value="Sign Up">
-        </div>
-      
-        <div class="submit">
-            <p>You already have an account? Click <span><a href="log-in.html">Login</a></span></p>
+            <p>Bạn đã có tài khoản? Hãy nhấn <span><a href="log-in.html">Đăng nhập</a></span></p>
         </div>
       </form>
     </div>
    
 </body>
+<script src="script/dangky.js"></script>
 </html>

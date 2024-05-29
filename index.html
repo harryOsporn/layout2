@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB TH</title>
-    
+    <link rel="stylesheet" href="styles/floating-button.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/box.css">
     <link rel="stylesheet" href="styles/category.css">
@@ -139,23 +139,13 @@
             
 
     <!-- Intro Text Area -->
-
-    <div class="textarea-container">
-        <div class="ads">
-            <span>Sản Phẩm Mới đang Giảm Giá: Lên đến 40%</span>
-            <a href="">Hãy Truy Cập Ngay</a>
-        </div>
-    </div>
-    <div class="textarea-container">
-        <div class="ads">
-            <span>Áp dụng Giảm 30% cho Thành Viên Mới</span>
-            <a href="">Thông tin chi tiết</a>
-        </div>
-    </div>
-    <div class="textarea-container">
-        <div class="ads">
-            <span>Những Sản Phẩm Hè Được Ưa Chuộng</span>
-            <a href="">Hãy Truy Cập Ngay</a>
+    <div class="intro-text-area-container">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+            </div>
         </div>
     </div>
      <!-- box -->
@@ -173,43 +163,68 @@
 
         <div class="card">
             <div class="card-item">
-                <img src="assets/shoose1.png" alt="">
-                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);">Nike 1</span><br>
-                <span style="color: rgb(136, 133, 133);font-size: 18px;">Women's Shoes</span> <br>  
-                <p style="font-weight: 500;color: brown;">3,239,000đ</p>
-                <h4>4.4  <i class="fa fa-star"></i> <span style="font-weight: 400;font-size: 14px;">(12)</span></h4>
+                <a style="text-decoration: none;" href="product-details/product-details.html">
+                    <img src="assets/t-shirt1.png" alt="">
+                    <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);padding: 0;">Nike 1</span><br>
+                    <span style="color: rgb(136, 133, 133);font-size: 18px;padding: 0;">Women's Shoes</span> <br>  
+                    <p style="font-weight: 500;color: brown;">3,239,000đ</p>
+                    <h4 style="color: black;">4.4  <i class="fa fa-star"></i> <span style="font-weight: 400;font-size: 14px;">(12)</span></h4>
+                </a>
             </div>
             <div class="card-item">
-                <img src="assets/shoose2.png" alt="">
-                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);">Nike 2</span><br>
-                <span style="color: rgb(136, 133, 133);font-size: 18px;">Women's Shoes</span> <br>  
+                <img src="assets/pants1.png" alt="">
+                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);padding: 0;">Nike 2</span><br>
+                <span style="color: rgb(136, 133, 133);font-size: 18px;padding: 0;">Women's Shoes</span> <br>  
                 <p style="font-weight: 500;color: brown;">3,239,000đ</p>
                 <h4>4.4  <i class="fa fa-star"></i> <span style="font-weight: 400;font-size: 14px;">(12)</span></h4>
             </div>
             <div class="card-item">
                 <img src="assets/shoose3.png" alt="">
-                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);">Nike 3</span><br>
-                <span style="color: rgb(136, 133, 133);font-size: 18px;">Women's Shoes</span> <br>  
+                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);padding: 0;">Nike 3</span><br>
+                <span style="color: rgb(136, 133, 133);font-size: 18px;padding: 0;">Women's Shoes</span> <br>  
                 <p style="font-weight: 500;color: brown;">3,239,000đ</p>
                 <h4>4.4  <i class="fa fa-star"></i> <span style="font-weight: 400;font-size: 14px;">(12)</span></h4>
             </div>
             <div class="card-item">
                 <img src="assets/shoose4.png" alt="">
-                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);">Nike 4</span><br>
-                <span style="color: rgb(136, 133, 133);font-size: 18px;">Women's Shoes</span> <br>  
+                <span style="font-weight: 500;font-size: 18px;color: rgb(112, 112, 242);padding: 0;">Nike 4</span><br>
+                <span style="color: rgb(136, 133, 133);font-size: 18px;padding: 0;">Women's Shoes</span> <br>  
                 <p style="font-weight: 500;color: brown;">3,239,000đ</p>
                 <h4>4.4  <i class="fa fa-star"></i> <span style="font-weight: 400;font-size: 14px;">(12)</span></h4>
             </div>
         </div>
-
-        <!-- <div class="exploreMore-btn">
-            Explore more 
-        </div> -->
      </div>
 
-     <!-- intro text area: các loại hàng phổ biến -->
+     <!-- floating button -->
+    <div class="floating-container">
+        <div class="floating-button-zalo">
+            <img src="assets/zalo-logo.webp" alt="">
+        </div>
+        <div class="floating-button-messenger">
+            <img src="assets/messenger-logo.png" alt="">
+        </div>
+    </div>
 
-    
+     <!-- intro text area: các loại hàng phổ biến -->
+     <div class="categories">
+        <h3>INTRO TEXT AREA</h3>
+        <p>Loại sản phẩm mà bạn không quan tâm</p>
+
+        <div class="row">
+            <div class="col-3">
+                <img src="assets/type1.jpg" alt="">
+                <div class="layer"><h3>áo</h3></div>
+            </div>
+            <div class="col-3">
+                <img src="assets/type2.webp" alt="">
+                <div class="layer"><h3>quần</h3></div>
+            </div>
+            <div class="col-3">
+                <img src="assets/type3.jpg" alt="">
+                <div class="layer"><h3>giày</h3></div>
+            </div>
+        </div>
+     </div>
 
 <!-- footer -->
 <div class="footer-container">

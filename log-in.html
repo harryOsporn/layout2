@@ -6,6 +6,13 @@
     <title>ĐĂNG NHẬP</title>
     <link rel="stylesheet" href="styles/account-page.css">
     <link rel="stylesheet" href="styles/account-page-responsive.css">
+    <style>
+        .error-message{
+            color: red;
+            font-size: 14px; 
+            margin-top: 5px; 
+        }
+    </style>
 </head>
 <body>
     
@@ -21,15 +28,17 @@
        <form action="" method="">
        
         <div class="email">
-            <input type="email" class="emailInput" placeholder="Email*" required>
+            <input type="email" class="emailInput" id="emailInput" placeholder="Email*">
+            <div class="error-message" id="emailErrorMessage"></div>
         </div>
 
-         <div class="password">
-             <input class="passwordInput" type="password" placeholder="Mật khẩu*" required>
-         </div>
+        <div class="password">
+            <input class="passwordInput" id="passwordInput" type="password" placeholder="Mật khẩu*" >
+            <div class="error-message" id="passwordErrorMessage"></div>
+        </div>
       
          <div class="submit">
-             <input class="submitInput" type="submit" value="Đăng Nhập">
+            <button type="button" class="submitInput" onclick="validateForm()">Đăng Nhập</button>
          </div>
        
          <div class="submit">
@@ -39,4 +48,48 @@
      </div>
 
 </body>
+<script >
+function validateForm(){
+
+    var password = passwordInput.value.trim();
+    var email = emailInput.value.trim();
+
+    var isValid = true;
+  
+    // Mật khẩu 1
+    if (password === ''){
+        passwordErrorMessage.textContent = 'Vui lòng nhập mật khẩu.';
+        passwordInput.focus();
+        isValid = false;
+    }
+    else if(password.length < 8){
+        passwordErrorMessage.textContent = 'Mật khẩu không hợp lệ.';
+        passwordInput.focus();
+        isValid = false;
+    }
+    else {
+        passwordErrorMessage.textContent = '';
+    }
+    // Email
+    if (!validateEmail(emailInput.value)) {
+        emailErrorMessage.textContent = 'Vui lòng nhập một địa chỉ email hợp lệ.';
+        emailInput.focus();
+        isValid = false;
+    } else {
+        emailErrorMessage.textContent = '';
+    }
+        
+
+
+    if(isValid){
+        alert('Đăng nhập thành công');
+        location.href = 'index.html';
+    }
+
+    function validateEmail(email) {
+        var emailRegex = /\S+@\S+\.\S+/;
+        return emailRegex.test(email);
+    }
+}
+</script>
 </html>
